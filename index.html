@@ -34,7 +34,31 @@
         padding: 0;
         box-sizing: border-box
     }
-
+    .btn{
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: block;
+        position: relative; /*per muovere verso il basso i pixels*/
+        background-color: #fcad26;
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 25px 80px;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0 6px #efa424;/*x offset , y offset, color*/
+    }
+    .btn:hover{
+        box-shadow: 0 4px #efa424;
+        top: 2px;
+    }
+    .btn:active{
+        box-shadow: none;
+        top: 4px;
+    }
     :root {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale
@@ -1001,6 +1025,7 @@
                                                                                       data-framer-original-sizes="210.5217px">
                                 </div>
                             </div>
+
                         </li>
                         <li>
                             <div class="framer-1vmhrq0" data-framer-name="cloud1png" name="cloud1png"
@@ -1091,57 +1116,32 @@
                                                                       style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain;image-rendering:auto"
                                                                       data-framer-original-sizes="67.6667px"></div>
             </a></div>
-            <div class="framer-qqvici" data-framer-name="Hero" name="Hero">
-                <div class="framer-bmzv19" data-framer-name="nerdpng" name="nerdpng"
-                     style="transform:translate(-50%, -50%)">
-                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                         data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                          sizes="(min-width: 1200px) 179px, (min-width: 810px) and (max-width: 1199px) 179px, (max-width: 809px) 179px"
-                                                                          srcset="framerusercontent.com/images/jP9wcla1fzcUsemCMYOIzVGg.png 644w"
-                                                                          src="framerusercontent.com/images/jP9wcla1fzcUsemCMYOIzVGg.png"
-                                                                          alt
-                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
-                                                                          data-framer-original-sizes="179px"></div>
-                </div>
-                <div class="framer-49gomr" data-framer-name="buff_cat" name="buff_cat"
-                     style="transform:translate(-50%, -50%)">
-                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                         data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                          src="framerusercontent.com/images/hGQlqSzCS35WrSQa9OVaDH2PJc.png"
-                                                                          alt
-                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain;image-rendering:auto">
+            <div class="framer-qqvici" data-framer-name="Hero" name="Hero" style="position: relative; height: 100vh;">
+                <button class="btn" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; padding: 10px 20px;" onclick="window.location.href='https://peepmeme.vercel.app';">Make Your Peep</button>
+                <div class="framer-bmzv19" data-framer-name="nerdpng" name="nerdpng" style="transform:translate(-50%, -50%)">
+                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true">
+                        <img decoding="async" sizes="(min-width: 1200px) 179px, (min-width: 810px) and (max-width: 1199px) 179px, (max-width: 809px) 179px" srcset="framerusercontent.com/images/jP9wcla1fzcUsemCMYOIzVGg.png 644w" src="framerusercontent.com/images/jP9wcla1fzcUsemCMYOIzVGg.png" alt style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto" data-framer-original-sizes="179px">
                     </div>
                 </div>
-                <div class="framer-zn85w8" data-framer-name="wif_pgn" name="wif_pgn"
-                     style="transform:translate(-50%, -50%)">
-                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                         data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                          sizes="(min-width: 1200px) 116px, (min-width: 810px) and (max-width: 1199px) 116px, (max-width: 809px) 116px"
-                                                                          srcset="framerusercontent.com/images/9JDpNuMhAJE0ao7nhlj1Vgpggzg.png 701w"
-                                                                          src="framerusercontent.com/images/9JDpNuMhAJE0ao7nhlj1Vgpggzg.png"
-                                                                          alt
-                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
-                                                                          data-framer-original-sizes="116px"></div>
+                <div class="framer-49gomr" data-framer-name="buff_cat" name="buff_cat" style="transform:translate(-50%, -50%)">
+                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true">
+                        <img decoding="async" src="framerusercontent.com/images/hGQlqSzCS35WrSQa9OVaDH2PJc.png" alt style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain;image-rendering:auto">
+                    </div>
+                </div>
+                <div class="framer-zn85w8" data-framer-name="wif_pgn" name="wif_pgn" style="transform:translate(-50%, -50%)">
+                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true">
+                        <img decoding="async" sizes="(min-width: 1200px) 116px, (min-width: 810px) and (max-width: 1199px) 116px, (max-width: 809px) 116px" srcset="framerusercontent.com/images/9JDpNuMhAJE0ao7nhlj1Vgpggzg.png 701w" src="framerusercontent.com/images/9JDpNuMhAJE0ao7nhlj1Vgpggzg.png" alt style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto" data-framer-original-sizes="116px">
+                    </div>
                 </div>
                 <div class="framer-16qwc9t" data-framer-name="mogpng" name="mogpng">
-                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                         data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                          sizes="(min-width: 1200px) 212px, (min-width: 810px) and (max-width: 1199px) 212px, (max-width: 809px) 212px"
-                                                                          srcset="framerusercontent.com/images/dtztibcHEfCza3t9KL0lW7k75ps.png 747w"
-                                                                          src="framerusercontent.com/images/dtztibcHEfCza3t9KL0lW7k75ps.png"
-                                                                          alt
-                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
-                                                                          data-framer-original-sizes="212px"></div>
+                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true">
+                        <img decoding="async" sizes="(min-width: 1200px) 212px, (min-width: 810px) and (max-width: 1199px) 212px, (max-width: 809px) 212px" srcset="framerusercontent.com/images/dtztibcHEfCza3t9KL0lW7k75ps.png 747w" src="framerusercontent.com/images/dtztibcHEfCza3t9KL0lW7k75ps.png" alt style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto" data-framer-original-sizes="212px">
+                    </div>
                 </div>
                 <div class="framer-12w79ir" data-framer-name="hatpng" name="hatpng">
-                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                         data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                          sizes="(min-width: 1200px) 261px, (min-width: 810px) and (max-width: 1199px) 261px, (max-width: 809px) 261px"
-                                                                          srcset="framerusercontent.com/images/QnzsMAzl21rmyKkbBOJwfWHlZ2s.png 862w"
-                                                                          src="framerusercontent.com/images/QnzsMAzl21rmyKkbBOJwfWHlZ2s.png"
-                                                                          alt
-                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
-                                                                          data-framer-original-sizes="261px"></div>
+                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true">
+                        <img decoding="async" sizes="(min-width: 1200px) 261px, (min-width: 810px) and (max-width: 1199px) 261px, (max-width: 809px) 261px" srcset="framerusercontent.com/images/QnzsMAzl21rmyKkbBOJwfWHlZ2s.png 862w" src="framerusercontent.com/images/QnzsMAzl21rmyKkbBOJwfWHlZ2s.png" alt style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto" data-framer-original-sizes="261px">
+                    </div>
                 </div>
             </div>
             <div class="framer-1tb4jbs hidden-ihzw8p" data-framer-name="buff_cat_text" name="buff_cat_text">
@@ -1153,7 +1153,9 @@
                                                                       alt
                                                                       style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain;image-rendering:auto"
                                                                       data-framer-original-sizes="200px"></div>
+
             </div>
+
         </div>
     </div>
     <div class="framer-SkKsg" id="overlay"></div><!--/$--></div>
@@ -1176,10 +1178,7 @@
 
 
 <script data-framer-appear-animation="no-preference"></script>
-<!-- Start of bodyEnd -->
 
-<!-- End of bodyEnd -->
 </body>
 
-<!-- Mirrored from peepcoin.lol/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Aug 2024 04:36:55 GMT -->
 </html>
